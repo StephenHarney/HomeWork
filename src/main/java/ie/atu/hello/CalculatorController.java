@@ -11,8 +11,8 @@ public class CalculatorController {
 
 
     @GetMapping("/calculate")
-        public String calculate(@RequestParam int num1, @RequestParam int num2){
-                return "num1 = num 2=" + num1 + num2;
+        public int calculate(@RequestParam int num1, @RequestParam int num2){
+                return num1+num2;
 
 
     }

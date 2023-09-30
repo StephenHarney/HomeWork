@@ -17,10 +17,20 @@ public class CalculatorController {
 
     }*/
 
-    @GetMapping("/calculate")
+    /*@GetMapping("/calculate")
         public int subtract(@RequestParam int num1, @RequestParam int num2){
                 return num1 - num2;
-        }
+        }*/
+
+    /*@GetMapping("/calculate")
+        public int multiply(@RequestParam int num1,@RequestParam int num2){
+            return num1 * num2;
+    }*/
+
+    @GetMapping("/calculate")
+        public int divide(@RequestParam int num1, @RequestParam int num2){
+            return num1/num2;
+    }
 
    /* @GetMapping("/calculate")
     public String calculate(@RequestParam String num1, @RequestParam String num2, @RequestParam String operation, @RequestParam int subtract){
